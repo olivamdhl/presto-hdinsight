@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 set -eux
 
 tpchtest(){
@@ -34,4 +34,4 @@ until [[ $(presto --schema default --execute 'select * from system.runtime.nodes
 done
 
 tpchtest
-hivetest
+#hivetest
