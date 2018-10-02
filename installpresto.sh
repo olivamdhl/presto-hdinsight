@@ -24,7 +24,7 @@ if [[ $(hostname -s) = hn0-* ]]; then
   apt-get update
   which mvn &> /dev/null || apt-get -y -qq install maven
   cd /var/lib/presto
-  wget https://github.com/olivamdhl/presto/archive/master.tar.gz -O presto-hdinsight.tar.gz
+  wget https://github.com/olivamdhl/presto-hdinsight/archive/master.tar.gz -O presto-hdinsight.tar.gz
   tar xzf presto-hdinsight.tar.gz
   cd presto-hdinsight-master
   wget https://prestohdi.blob.core.windows.net/build/presto-yarn-package.zip -P build/
